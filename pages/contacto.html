@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,22 @@
     <meta name="keywords" content="hamburguesería hamburguesa hamburguesas restaurant comida rapida local contacto">
     <!-- link misc -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
     <link rel="stylesheet" href="../css/main.css">
     <title>MeepBurger - Productos</title>
 </head>
+
 <body>
     <div class="contBody">
         <header class="headerGrid">
@@ -31,7 +35,8 @@
                         <li><a href="./sucursales.html"><i class="fa-solid fa-map-location-dot"></i> Sucursales</a></li>
                         <li><a href="./productos.html"><i class="fa-solid fa-box"></i> Productos</a></li>
                         <li><a href="../index.html"><i class="fa-solid fa-burger"></i> Inicio</a></li>
-                        <li><a href="./sobrenosotros.html"><i class="fa-solid fa-users-between-lines"></i> Sobre nosotros</a></li>
+                        <li><a href="./sobrenosotros.html"><i class="fa-solid fa-users-between-lines"></i> Sobre
+                                nosotros</a></li>
                         <li><a href="./contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
                     </ul>
                 </nav>
@@ -45,21 +50,21 @@
                 <form action="">
                     <fieldset>
                         <legend>Formulario de contacto</legend>
-                        <div>
+                        <div class="formularioContacto">
                             <label for="nombre"> Ingresar nombre: </label>
-                            <input type="text" name="nombre" placeholder="Ingresar nombre">
+                            <input type="text" name="nombre" placeholder="Ingresar nombre" required>
                         </div>
-                        <div>
+                        <div class="formularioContacto">
                             <label for="edad"> Ingresar edad: </label>
-                            <input type="number" name="edad" placeholder="Ingresar edad" min="18">
+                            <input type="number" name="edad" placeholder="Ingresar edad" min="18" required>
                         </div>
-                        <div>
+                        <div class="formularioContacto">
                             <label for="email"> Ingresar email: </label>
-                            <input type="email" name="email" placeholder="Ingresar email">
+                            <input type="email" name="email" placeholder="Ingresar email" required>
                         </div>
-                        <div>
+                        <div class="formularioContacto">
                             <label for="provincia"> Selecciona tu provincia: </label>
-                            <select name="provincia" id="">
+                            <select name="provincia">
                                 <option value="Buenos Aires">Buenos Aires</option>
                                 <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
                                 <option value="Córdoba">Córdoba</option>
@@ -68,28 +73,28 @@
                                 <option value="San Luis">San Luis</option>
                             </select>
                         </div>
-                        <div>
-                            <label for="motivoconsulta"> Motivo de la consulta: </label> <br>
-                
-                                <div>
-                                    <label for="motivoconsulta"> Marketing </label> 
-                                    <input type="radio" name="motivoconsulta" value="marketing"> <br>
-                                </div>
-                
-                                <div>
-                                    <label for="motivoconsulta"> Finanzas </label>    
-                                    <input type="radio" name="motivoconsulta" value="finanzas"> <br>
-                                </div>
-                
-                                <div>
-                                    <label for="motivoconsulta"> Sugerencia </label>
-                                    <input type="radio" name="motivoconsulta" value="sugerencia"> 
-                                </div>
+                        <div class="formularioContacto">
+                            <label for="motivoconsulta"> Motivo de la consulta: </label> 
+
+                            <div>
+                                <label for="motivoconsulta"> Marketing </label>
+                                <input type="radio" name="motivoconsulta" value="marketing"> 
+                            </div>
+
+                            <div>
+                                <label for="motivoconsulta"> Finanzas </label>
+                                <input type="radio" name="motivoconsulta" value="finanzas"> 
+                            </div>
+
+                            <div>
+                                <label for="motivoconsulta"> Sugerencia </label>
+                                <input type="radio" name="motivoconsulta" value="sugerencia">
+                            </div>
                         </div>
-                        <div>
-                            
+                        <div class="formularioContacto">
+
                             <label for="mensaje">Ingresar mensaje:</label>
-                            <textarea name="mensaje" id="" cols="30" rows="4"> </textarea>
+                            <textarea name="mensaje" id="" cols="30" rows="4" placeholder="Ingresar mensaje"> </textarea>
                         </div>
                         <br>
                         <div>
@@ -104,6 +109,7 @@
             <p> &copy; Todos los derechos reservados 2022</p>
         </footer>
     </div>
-    
+
 </body>
+
 </html>
